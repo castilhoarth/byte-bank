@@ -1,10 +1,12 @@
-class Funcionario(
+open class Funcionario( //open eh o que permite realizar uma heranca
     val nome: String,
     val cpf: String,
     val salario: Double,
-    val tipo: Int // = 0 -> funcionario, 1-> gerente, 2-> diretor
 ){
-    fun bonificacao(): Double {
-        return 0.1 * salario
-    }
+    //transformado em property
+    open fun bonificacao(): Double = salario * 0.1
+
+//    open fun bonificacao(): Double {
+//        return salario * 0.1
+//    }
 }

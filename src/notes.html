@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notes</title>
+</head>
+<body>
+Kotlin e Orientação a Objetos
+
+<ul>
+Veio como uma alternativa ao JAVA desenvolvido pela Jetbrains;
+
+Criando o projeto
+Documentação: https://kotlinlang.org/docs/reference/
+Ambiente de desenvolvimento integrado
+SDK utilizado pelo kotlin é o JDK do Java;
+Event log quando está vermelho é porque está pendente;
+Na pasta build é onde fica os arquivos
+</ul>
+Criando variáveis
+Var é a variável que pode ser modificada e val é a que não pode
+Não é uma linguagem fortemente tipada
+É estaticamente tipada
+p/ executar o atalho é ctrl + shift + f10
+println pula linha e print não
+Quando não pretendemos mudar o valor, usar val é recomendável
+Procedural vs Orientação a objetos (Formas de organizar o código)
+Procedural tem dificuldades para representar sistemas do mundo real
+A ideia da orientação a objetos é conseguir representar bem o mundo real de forma organizada
+Manutenção fica mais fácil
+Classe é a base da POO
+Estrutura que representa algo do mundo real: ex conta de banco
+
+Criação de classes
+Primeira letra de uma classe deve ser maiúsculo
+Se criarmos classe em nível de função ao invés de nível de arquivo, não será possível instanciá-la em outra parte fora do escopo da função
+Cópia e referência
+Quando colocamos duas variáveis com o valor de uma instância, acontece de a gente acabar manipulando o mesmo objeto por se tratar de uma referência
+Métodos
+Funções dentro da classe que devem ser usadas quando temos o objetivo de modificar um atributo da classe;
+Unit é o “void” do Kotlin, que seria o tipo retornado quando não retornamos nada
+Encapsulamento com getter e setter
+Por padrão os modificadores de acesso são públicos no kotlin
+É uma forma de fazer com que só o próprio objeto possa controlar seus atributos;
+Escondendo as coisas que ocorrem dentro de uma classe
+Permitindo inserir regras de funcionamento
+Utilizando Properties
+A ideia de get and setter não é interessante dentro do contexto do kotlin;
+O kotlin já coloca get e setter automaticamente (properties que são os atributos)
+Podemos personalizar nosso set e get
+alteramos por meio do field
+Criando contas com construtor
+Se a ideia for apenas inicializar as propriedades, podemos usar o construtor primário, se for colocar uma regra de negócio, usaremos o secundário
+Ou podemos usar o bloco init {} pra executar alguma coisa durante a construção
+Nas properties é interessante começar usando val e depois se perceber a necessidade de mudança utilizar o var
+Uso de labels
+Pode se colocar valores antes dos parâmetros passados para identificar o que está sendo enviado
+Torna mais simples o entendimento do código e também o torna mais natural
+Criando classes
+Separar funções em arquivos exclusivos
+• ALT + INSERT cria arquivo
+• CTRL + ALT + M extrai código diretamente pra função ou método
+• Alt + enter já extrai a classe para um arquivo
+• Alt shift x fecha todos os arquivos abertos
+• Alt enter na declaração de classe já permite colocar em linhas separadas
+
+Class
+• Sempre quando queremos comportamentos específicos, é mais interessante criar uma nova classe
+
+
+Class
+• Sempre quando queremos comportamentos específicos, é mais interessante criar uma nova classe
+
+Kotlin: Heranca
+
+• Herdar o comportamento e atributos de uma classe maior
+• E podemos sobrescrever essas caracteristicas;
+
+</body>
+</html>
